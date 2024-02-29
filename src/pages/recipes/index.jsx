@@ -46,10 +46,10 @@ export default function Recipes() {
                     onKeyDown={event => event.key === 'Enter' && searchRecipes()} />
 
                 <Grid sx={{ mt: '2rem' }} container spacing={3}>
-                    { loading?   <Container>
+                    { loading?  <Container>
                             <img sx={{ display:'flex'  ,justifycontent:'center'}}
                             src={loading} />
-                        </Container>: recipes.length > 0 ? recipes.map((recipe) => <RecipeItem key={recipe.id} title={recipe.title} image={recipe.image} />) : (
+                        </Container>: recipes.length > 0 ? recipes.map((recipe) => <RecipeItem key={recipe.id} title={recipe.title} image={recipe.image} id={recipe.id} />) : (
                         <Container>
                             <img sx={{ display:'flex',justifycontent:'center'}}
                             src={noRecipes}  width={"25%"}/>

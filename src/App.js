@@ -6,7 +6,7 @@ import Recipes from "./pages/recipes";
 const router= createBrowserRouter([
   {path:"/" ,element : <Recipes/> },
   {path:"/recipes", element:<Recipes/>},
-  {path : "/recipes/id" ,element :<Recipe/>}
+  {path : "/recipes/:id" ,element :<Recipe/>}
 
 ]);
 
